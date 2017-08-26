@@ -14,22 +14,17 @@ git remote add origin git@github.com:PerStirpes/Build-Algorithms.git
 git push -u origin master
 
 |Notation       |   Name
-| ------------- |:-------------:| -----:|
-| O(1) |Constant
-
+| ------------- |:-------------:|
+| O(1)          |Constant
 |O(log(n))| Logarithmic
+|O((log(n))c)|
+|Poly-logarithmi
+|O(n)|
+|Linear
 
-O((log(n))c)
+|O(n2)|
 
-Poly-logarithmic
-
-O(n)
-
-Linear
-
-O(n2)
-
-Quadratic
+|Quadratic
 
 O(nc)
 
