@@ -10,7 +10,8 @@ Markdown | Less | Pretty
 *Still* | `renders` | **nicely**
 1 | 2 | 3
 
-
+git remote add origin git@github.com:PerStirpes/Build-Algorithms.git
+git push -u origin master
 
 |Notation       |   Name
 | ------------- |:-------------:| -----:|
@@ -141,39 +142,10 @@ In the following section, you will find a cheat sheet that shows the complexitie
 DATA STRUCTURES
 The following table show the complexities for Data Structures:
 
-Data Structure
-
-Average Cases
-
-Worst Cases
-
-
-Insert
-
-Delete
-
-Search
-
-Insert
-
-Delete
-
-Search
-
-
-Array/ Stack/ Queue
-
-O(1)
-
-O(1)
-
-O(n)
-
-O(1)
-
-O(1)
-
-O(n)
+Data Structure | Average Cases  |Worst Cases
+| ------------- |:-------------:| -----:|
+|Insert |Delete| Search | Insert | Delete | Search |  
+| Array/ Stack/ Queue| O(1) | O(1) | | O(n) | O(1) |O(1) |O(n)
 
 Linked List
 
