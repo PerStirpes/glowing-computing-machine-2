@@ -137,10 +137,10 @@ In the following section, you will find a cheat sheet that shows the complexitie
 DATA STRUCTURES
 The following table show the complexities for Data Structures:
 
-Data Structure | Average Cases  |Worst Cases
-| ------------- |:-------------:| -----:|
-|Insert |Delete| Search | Insert | Delete | Search |  
-| Array/ Stack/ Queue| O(1) | O(1) | | O(n) | O(1) |O(1) |O(n)
+Data Structure | Average Cases  |Worst Cases | e          |            e |          e | e
+| ------------- |-------------| -------------|-------------|-------------|-------------|-----:|
+|Insert          |Delete      | Search       | Insert      | Delete      | Search      |  dad
+| Array/ Stack/ Queue| O(1) | O(1) | O(n) | O(1) |O(1) |O(n)
 
 Linked List
 
@@ -215,33 +215,10 @@ O(log(n))
 GRAPHS
 The following table show the complexities for Graphs:
 
-Node/ Edge Management
+Node/ Edge Management | Storage Size  |Add Vertex | Add Edge          | Remove Vertex| Remove Edge | Query
+| ------------- |-------------| -------------|-------------|-------------|-------------|-----:|
+|Adjacency List   |O (|V| + |E|     | O(1)       | O(1)      |O (|V| + |E|)     | O(|E|)      |  O(|V|)
 
-Storage Size
-
-Add Vertex
-
-Add Edge
-
-Remove Vertex
-
-Remove Edge
-
-Query
-
-Adjacency List
-
-O (|V| + |E|)
-
-O(1)
-
-O(1)
-
-O (|V| + |E|)
-
-O(|E|)
-
-O(|V|)
 
 Adjacency Matrix
 
@@ -260,25 +237,10 @@ O(1)
 SORTING ALGORITHMS
 The following table show the complexities for Sorting Algorithms:
 
-Algorithm (applied to Array)
-
-Time Complexity
-
-
-Best Cases
-
-Average Cases
-
-Worst Cases
-
-
-Bubble Sort
-
-O(n)
-
-O(n2)
-
-O(n2)
+Algorithm (applied to Array) |  Time Complexity  |blank | e          |            e |          e | e
+| ------------- |-------------| -------------|-------------|-------------|-------------|-----:|
+|Best Cases |Average Cases | Worst Cases | blank
+|Bubble Sort | O(n)         | O(n2)        |O(n2)
 
 Selection Sort
 
@@ -339,17 +301,10 @@ O(nk)
 SEARCHING ALGORITHMS
 The following table show the complexities for Searching Algorithms:
 
-Algorithm
 
-Data Structure
-
-Worst Case
-
-Sequential Search
-
-Array
-
-O(n)
+Algorithm  |  Data Structure  |Worst Case| e          |            e |          e | e
+| ------------- |-------------| -------------|-------------|-------------|-------------|-----:|
+|Sequential Search | Array | O(n) | blank
 
 Binary Search
 
