@@ -229,7 +229,7 @@ The following table show the complexities for Graphs:
 
 Node/ Edge Management | Storage Size  |Add Vertex | Add Edge          | Remove Vertex| Remove Edge | Query
 | ------------- |-------------| -------------|-------------|-------------|-------------|-----:|
-|Adjacency List   |O (|V| + |E|     | O(1)       | O(1)      |O (|V| + |E|)     | O(|E|)      |  O(|V|)
+|Adjacency List  | "`O(|V| + |E|)`"    | "`O(1) ` "     | "`O(1)`"      | "`O(|V| + |E|)`"| "`O(|E|)`" | "`O(|V|)`"
 
 
 Adjacency Matrix
