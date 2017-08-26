@@ -42,14 +42,18 @@ Let's try to understand how big-O notation works using some examples.
 O(1)
 Consider the following function:
 
+```
 function increment(num){
   return ++num;
 }
+
+```
 If we try to execute the increment(1) function, we will have an execution time equal to x. If we try to execute the increment function again with a different parameter (let's say num is 2), the execution time will also be x. The parameter does not matter; the performance of the function increment will be the same. For this reason, we can say the preceding function has a complexity of O(1) (which is constant).
 
 O(N)
 Now, let's use the sequential search algorithm we implemented in Chapter 10 , Sorting and Searching Algorithms, as an example:
 
+```
 function sequentialSearch(array, item){
   for (var i=0; i<array.length; i++){
     if (item === array[i]){ //{1}
@@ -58,6 +62,7 @@ function sequentialSearch(array, item){
   }
   return -1;
 }
+```
 If we pass an array with 10 elements ([1, ..., 10]) to this function and look for element 1, in the first attempt, we will find the element we are looking for. Let's suppose the cost is 1 for each time we execute line {1}.
 
 Now, let's suppose we are looking for element 11. Line {1} will be executed 10 times (it will iterate through all the values of the array and it will not find the value we are looking for; therefore, it will return -1). If line {1} has a cost of 1, executing it 10 times has a cost of 10, which is 10 times more than the first example we used.
@@ -70,6 +75,7 @@ Considering the worst-case scenario of the sequentialSearch function, if we have
 
 To see the preceding explanation in practice, let's modify the algorithm to calculate the cost (the worst-case scenario), as follows:
 
+```
 function sequentialSearch(array, item){
   var cost = 0;
   for (var i=0; i<array.length; i++){
@@ -82,11 +88,13 @@ function sequentialSearch(array, item){
   array.length + ' is ' + cost);
   return -1;
 }
+```
 Try executing the preceding algorithm using different input sizes so that you can see the different outputs.
 
 O(N2)
 For the O(n2) example, let's use the bubble sort algorithm:
 
+```
 function swap(array, index1, index2){
   var aux = array[index1];
   array[index1] = array[index2];
@@ -103,8 +111,10 @@ function bubbleSort(array){
     }
   }
 }
+```
 Consider that lines {1} and {2} have a cost of 1 each. Let's modify the algorithm to calculate the cost as follows:
 
+```
 function bubbleSort(array){
   var length = array.length;
   var cost = 0;
@@ -120,6 +130,8 @@ function bubbleSort(array){
   console.log('cost for bubbleSort with input size ' + length + '
   is ' + cost);
 }
+
+```
 If we execute bubbleSort for an array with size 10, the cost will be 100 (102). If we execute bubbleSort for an array with size 100, the cost will be 10,000 (1002). Note that the execution will take even longer every time we increase the input size.
 
 NOTE
