@@ -1,4 +1,4 @@
-Chapter 10. Sorting and Searching Algorithms
+# Sorting and Searching Algorithms
 Suppose we have a telephone agenda (or a notebook) that does not have any sorting order. When you need to add a contact with telephone numbers, you simply write it down in the next available slot. Suppose you also have a high number of contacts in your contact list. On any ordinary day, you need to find a particular contact and his/her telephone number. However, as the contact list is not organized in any order, you have to check it contact by contact until you find the desired one. This approach is horrible, don't you agree? Imagine that you have to search for a contact in Yellow Pages and it is not organized! It could take forever!
 
 For this reason, among others, we need to organize sets of information, such as the information we have stored in data structures. Sorting and searching algorithms are widely used in the daily problems we have to solve.
@@ -9,7 +9,7 @@ The sorting algorithms
 From this introduction, you should understand that you need to learn how to sort first and then search for the information given. In this section, we will cover some of the most well-known sorting algorithms in computer science. We will start with the slowest one, and then we will cover some better algorithms.
 
 Before we get started with the sorting algorithms, let's create an array (list) to represent the data structure that we want to sort and search, as follows:
-
+```
 function ArrayList(){
 
   var array = []; //{1}
@@ -22,6 +22,7 @@ function ArrayList(){
     return array.join();
   };
 }
+```
 As you can note, ArrayList is a simple data structure that stores the items in an array (line {1}). We only have an insert method to add elements to our data structure (line {2}), which simply uses the native push method of the JavaScript Array class that we covered in Chapter 2 , Arrays. Finally, to help us verify the result, the toString method (line {3}) concatenates all the array's elements into a single string so that we can easily output the result in the browser's console using the join method from the native JavaScript Array class.
 
 NOTE
